@@ -14,11 +14,14 @@ def index(request):
 
         my_form=contact1(first_name=fname,last_name=lname,email_id=email,phone_No=phone,Subject=subject,Message=message)
         my_form.save()
-        data={
-            'msg':'thank for contacting us'}
 
+        # return HttpResponse("thank you contacting us")
+        data={
+            'msg':'thank for contacting us'
+        }
         return render(request,'index.html',data)
-        
+        sleep(2)
+        return redirect('index')
 
         
     return render(request,'index.html')

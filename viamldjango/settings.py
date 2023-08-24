@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-jg*_nlg7m*bv2q3m6w)$!*blukesnwnk$ae@9$#c4v*s=ysm30
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'vimu',
 ]
 
 MIDDLEWARE = [
@@ -73,16 +74,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'viamldjango.wsgi.application'
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME' : 'contactdb',
+        'ENFORCE_SCHEMA': True,  # Set to True if you want to enforce a schema
+        'CLIENT': {
+            'host': 'mongodb+srv://mks:Nsti12345@clusterfortesting.gwwsyqj.mongodb.net/?retryWrites=true&w=majority',
+            'username': 'mks',
+            'password': 'Nsti12345',
+            'authMechanism': 'SCRAM-SHA-1',  # Update as needed
+        }
+    }
+}
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation
