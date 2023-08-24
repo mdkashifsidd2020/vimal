@@ -74,19 +74,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'viamldjango.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME' : 'contactdb',
-        'ENFORCE_SCHEMA': True,  # Set to True if you want to enforce a schema
-        'CLIENT': {
-            'host': 'mongodb+srv://mks:Nsti12345@clusterfortesting.gwwsyqj.mongodb.net/?retryWrites=true&w=majority',
-            'username': 'mks',
-            'password': 'Nsti12345',
-            'authMechanism': 'SCRAM-SHA-1',  # Update as needed
-        }
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME' : 'contactdb',
+#         'ENFORCE_SCHEMA': True,  # Set to True if you want to enforce a schema
+#         'CLIENT': {
+#             'host': 'mongodb+srv://mks:Nsti12345@clusterfortesting.gwwsyqj.mongodb.net/?retryWrites=true&w=majority',
+#             'username': 'mks',
+#             'password': 'Nsti12345',
+#             'authMechanism': 'SCRAM-SHA-1',  # Update as needed
+#         }
+#     }
+# }
 
 
 
