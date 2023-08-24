@@ -74,16 +74,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'viamldjango.wsgi.application'
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'railway',
-       'USER': 'postgres',
-       'PASSWORD': '37WxLu5V6QOBBNbGrQVG',
-       'HOST': 'containers-us-west-183.railway.app',
-       'PORT': '6009',
-   }
-}
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'railway',
+#        'USER': 'postgres',
+#        'PASSWORD': '37WxLu5V6QOBBNbGrQVG',
+#        'HOST': 'containers-us-west-183.railway.app',
+#        'PORT': '6009',
+#    }
+# }
 
 
 
